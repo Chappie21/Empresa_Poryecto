@@ -39,19 +39,19 @@ public class Principal extends JPanel implements ActionListener{
 		
 		// PANELES
 		this.Barra_Panel = new JPanel();
-		this.Barra_Panel.setBorder(new LineBorder(new Color(128, 0, 0), 4, true));
-		this.Barra_Panel.setBackground(new Color(139, 0, 0));
+		this.Barra_Panel.setBorder(new LineBorder(new Color(0, 51, 153), 4, true));
+		this.Barra_Panel.setBackground(new Color(0, 51, 153));
 		this.add(Barra_Panel, BorderLayout.WEST);
 		this.Barra_Panel.setLayout(new BorderLayout(0, 0));
 		
 		this.Botones_Panel = new JPanel();
-		this.Botones_Panel.setBackground(new Color(139, 0, 0));
+		this.Botones_Panel.setBackground(new Color(0, 51, 153));
 		this.Barra_Panel.add(Botones_Panel, BorderLayout.CENTER);
 		this.Botones_Panel.setLayout(new GridLayout(7, 1, 0, 0));
 		
 		this.Panel_Icono = new JPanel();
 		this.Panel_Icono.setBorder(new LineBorder(new Color(255, 255, 255), 2, true));
-		this.Panel_Icono.setBackground(new Color(128, 0, 0));
+		this.Panel_Icono.setBackground(new Color(0, 51, 153));
 		this.Barra_Panel.add(Panel_Icono, BorderLayout.NORTH);
 		this.Panel_Icono.setLayout(new BorderLayout(0, 0));
 		
@@ -64,28 +64,28 @@ public class Principal extends JPanel implements ActionListener{
 		
 		// ICONO
 		this.Icono = new JLabel("");
-		this.Icono.setBackground(new Color(128, 0, 0));
-		this.Icono.addMouseListener(new Mouse_Boton(Icono, new Color(139, 0, 0), new Color(110, 0, 0)));
+		this.Icono.setBackground(new Color(0, 51, 153));
+		this.Icono.addMouseListener(new Mouse_Boton(Icono, new Color(0, 51, 153), new Color(0, 30, 153)));
 		
 		this.Icono.setIcon(new ImageIcon("Imagenes/icon_usuario_N.png"));
 		this.Panel_Icono.add(Icono, BorderLayout.CENTER);
 		
 		this.Nombre = new JLabel(datos[0]+" "+datos[1]);
 		this.Nombre.setForeground(new Color(255, 255, 255));
-		this.Nombre.setBackground(new Color(139, 0, 0));
+		this.Nombre.setBackground(new Color(0, 51, 153));
 		this.Nombre.setHorizontalAlignment(SwingConstants.CENTER);
-		this.Nombre.setFont(new Font("Arial", Font.BOLD, 11));
+		this.Nombre.setFont(new Font("SansSerif", Font.BOLD, 11));
 		this.Panel_Icono.add(Nombre, BorderLayout.SOUTH);
 		
 		// BOTONES
 		this.b_Inicio = new JButton("INICIO");
 		b_Inicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		this.b_Inicio.setHorizontalAlignment(SwingConstants.LEFT);
-		this.b_Inicio.setBackground(new Color(139, 0, 0));
+		this.b_Inicio.setBackground(new Color(0, 51, 153));
 		this.b_Inicio.setIcon(new ImageIcon("Imagenes/inicio_N.png"));
-		this.b_Inicio.addMouseListener(new Mouse_Boton(b_Inicio, new Color(139, 0, 0), new Color(110, 0, 0)));
+		this.b_Inicio.addMouseListener(new Mouse_Boton(b_Inicio, new Color(0, 51, 153), new Color(0, 30, 153)));
 		this.b_Inicio.addActionListener(this);
-		this.b_Inicio.setFont(new Font("Arial", Font.BOLD, 12));
+		this.b_Inicio.setFont(new Font("SansSerif", Font.BOLD, 12));
 		this.b_Inicio.setForeground(new Color(255, 255, 255));
 		this.Botones_Panel.add(b_Inicio);
 		
@@ -97,10 +97,10 @@ public class Principal extends JPanel implements ActionListener{
 				this.b_Inventario = new JButton("  INVENTARIO");
 				this.b_Inventario.setHorizontalAlignment(SwingConstants.LEFT);
 				this.b_Inventario.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				this.b_Inventario.setBackground(new Color(139, 0, 0));
+				this.b_Inventario.setBackground(new Color(0, 51, 153));
 				this.b_Inventario.setIcon(new ImageIcon("Imagenes/materia_N.png"));
-				this.b_Inventario.addMouseListener(new Mouse_Boton(b_Inventario, new Color(139, 0, 0), new Color(110, 0, 0)));
-				this.b_Inventario.setFont(new Font("Arial", Font.BOLD, 12));
+				this.b_Inventario.addMouseListener(new Mouse_Boton(b_Inventario, new Color(0, 51, 153), new Color(0, 30, 153)));
+				this.b_Inventario.setFont(new Font("SansSerif", Font.BOLD, 12));
 				this.b_Inventario.setForeground(Color.WHITE);
 				this.Botones_Panel.add(b_Inventario);
 				
@@ -123,22 +123,22 @@ public class Principal extends JPanel implements ActionListener{
 				this.b_Crear = new JButton("CREAR USUARIO");
 				this.b_Crear.setHorizontalAlignment(SwingConstants.LEFT);
 				this.b_Crear.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				this.b_Crear.setBackground(new Color(139, 0, 0));
+				this.b_Crear.setBackground(new Color(0, 51, 153));
 				this.b_Crear.setIcon(new ImageIcon("Imagenes/add_User_W_N.png"));
-				this.b_Crear.addMouseListener(new Mouse_Boton(b_Crear, new Color(139, 0, 0), new Color(110, 0, 0)));
+				this.b_Crear.addMouseListener(new Mouse_Boton(b_Crear, new Color(0, 51, 153), new Color(0, 30, 153)));
 				this.b_Crear.addActionListener(this);
-				this.b_Crear.setFont(new Font("Arial", Font.BOLD, 12));
+				this.b_Crear.setFont(new Font("SansSerif", Font.BOLD, 12));
 				this.b_Crear.setForeground(Color.WHITE);
 				this.Botones_Panel.add(b_Crear);
 				
 				this.b_Eliminar_Modificar = new JButton("MODIFICACIONES");
 				this.b_Eliminar_Modificar.setHorizontalAlignment(SwingConstants.LEFT);
 				this.b_Eliminar_Modificar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				this.b_Eliminar_Modificar.setBackground(new Color(139, 0, 0));
+				this.b_Eliminar_Modificar.setBackground(new Color(0, 51, 153));
 				this.b_Eliminar_Modificar.setIcon(new ImageIcon("Imagenes/edit_User_W_N.png"));
-				this.b_Eliminar_Modificar.addMouseListener(new Mouse_Boton(b_Eliminar_Modificar, new Color(139, 0, 0), new Color(110, 0, 0)));
+				this.b_Eliminar_Modificar.addMouseListener(new Mouse_Boton(b_Eliminar_Modificar, new Color(0, 51, 153), new Color(0, 30, 153)));
 				this.b_Eliminar_Modificar.addActionListener(this);
-				this.b_Eliminar_Modificar.setFont(new Font("Arial", Font.BOLD, 12));
+				this.b_Eliminar_Modificar.setFont(new Font("SansSerif", Font.BOLD, 12));
 				this.b_Eliminar_Modificar.setForeground(Color.WHITE);
 				this.Botones_Panel.add(b_Eliminar_Modificar);
 			
@@ -151,9 +151,9 @@ public class Principal extends JPanel implements ActionListener{
 		this.b_Conf.setHorizontalAlignment(SwingConstants.LEFT);
 		this.b_Conf.setForeground(new Color(255, 255, 255));
 		this.b_Conf.setIcon(new ImageIcon("Imagenes/conft_N.png"));
-		this.b_Conf.setFont(new Font("Arial", Font.BOLD, 12));
-		this.b_Conf.addMouseListener(new Mouse_Boton(b_Conf, new Color(139, 0, 0), new Color(110, 0, 0)));
-		this.b_Conf.setBackground(new Color(139, 0, 0));
+		this.b_Conf.setFont(new Font("SansSerif", Font.BOLD, 12));
+		this.b_Conf.addMouseListener(new Mouse_Boton(b_Conf, new Color(0, 51, 153), new Color(0, 30, 153)));
+		this.b_Conf.setBackground(new Color(0, 51, 153));
 		this.Botones_Panel.add(b_Conf);
 		
 		this.b_Salir = new JButton("CERRAR SESION");
@@ -161,11 +161,11 @@ public class Principal extends JPanel implements ActionListener{
 		this.b_Salir.setHorizontalAlignment(SwingConstants.LEFT);
 		this.b_Salir.setForeground(new Color(255, 255, 255));
 		this.b_Salir.addActionListener(this);
-		this.b_Salir.addMouseListener(new Mouse_Boton(b_Salir, new Color(139, 0, 0), new Color(110, 0, 0)));
+		this.b_Salir.addMouseListener(new Mouse_Boton(b_Salir, new Color(0, 51, 153), new Color(0, 30, 153)));
 		
-		this.b_Salir.setBackground(new Color(139, 0, 0));
+		this.b_Salir.setBackground(new Color(0, 51, 153));
 		this.b_Salir.setIcon(new ImageIcon("Imagenes/exit_N.png"));
-		this.b_Salir.setFont(new Font("Arial", Font.BOLD, 12));
+		this.b_Salir.setFont(new Font("SansSerif", Font.BOLD, 12));
 		this.Botones_Panel.add(b_Salir);
 		
 	}

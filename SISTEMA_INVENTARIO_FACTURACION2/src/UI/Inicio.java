@@ -42,7 +42,7 @@ public class Inicio extends Plantilla_Panel implements ActionListener{
 		
 		// PANEL TITULO
 		super.PanelTitulo.setTitle("  Menú de Inicio");
-		super.PanelTitulo.setIconImage(new ImageIcon("Imagenes/inicio_R_N.png")); // ICONO DEL TITULO
+		super.PanelTitulo.setIconImage(new ImageIcon("Imagenes/inicio_T.png")); // ICONO DEL TITULO
 		
 		super.PanelContent.setLayout(new GridLayout(2, 4, 0, 0)); // ESTABLECER LAYOUT DEL PANELCONTENT
 		
@@ -71,7 +71,7 @@ public class Inicio extends Plantilla_Panel implements ActionListener{
 				// ETIQUETA TITULO
 				this.T_Boton_Crear_U = new JLabel("CREAR USUARIO");
 				this.T_Boton_Crear_U.setHorizontalAlignment(SwingConstants.CENTER);
-				this.T_Boton_Crear_U.setForeground(new Color(128, 0, 0));
+				this.T_Boton_Crear_U.setForeground(new Color(113, 106, 234));
 				this.T_Boton_Crear_U.setFont(new Font("Arial", Font.BOLD, 19));
 				this.T_Boton_Crear_U.setBackground(new Color(255, 255, 255));
 				this.T_Boton_Crear_U.setOpaque(false);
@@ -97,7 +97,7 @@ public class Inicio extends Plantilla_Panel implements ActionListener{
 				// ETIQUETA TITULO
 				this.T_Boton_Modificar_U = new JLabel("MODIFICAR USUARIOS");
 				this.T_Boton_Modificar_U.setHorizontalAlignment(SwingConstants.CENTER);
-				this.T_Boton_Modificar_U.setForeground(new Color(128, 0, 0));
+				this.T_Boton_Modificar_U.setForeground(new Color(113, 106, 234));
 				this.T_Boton_Modificar_U.setFont(new Font("Arial", Font.BOLD, 19));
 				this.T_Boton_Modificar_U.setBackground(new Color(255, 255, 255));
 				this.T_Boton_Modificar_U.setOpaque(false);
@@ -122,7 +122,7 @@ public class Inicio extends Plantilla_Panel implements ActionListener{
 		
 		JLabel T_Boton_Conf = new JLabel("CONFIGURACION");
 		T_Boton_Conf.setHorizontalAlignment(SwingConstants.CENTER);
-		T_Boton_Conf.setForeground(new Color(128, 0, 0));
+		T_Boton_Conf.setForeground(new Color(113, 106, 234));
 		T_Boton_Conf.setFont(new Font("Arial", Font.BOLD, 19));
 		T_Boton_Conf.setBackground(new Color(255, 255, 255));
 		T_Boton_Conf.setOpaque(false);
@@ -147,7 +147,7 @@ public class Inicio extends Plantilla_Panel implements ActionListener{
 		T_Boton_Exit.setOpaque(true);
 		T_Boton_Exit.setBackground(new Color(255, 255, 255));
 		T_Boton_Exit.setHorizontalAlignment(SwingConstants.CENTER);
-		T_Boton_Exit.setForeground(new Color(128, 0, 0));
+		T_Boton_Exit.setForeground(new Color(113, 106, 234));
 		T_Boton_Exit.setFont(new Font("Arial", Font.BOLD, 19));
 		T_Boton_Exit.setOpaque(false);
 		Panel_Boton_Exit.add(T_Boton_Exit, BorderLayout.SOUTH);

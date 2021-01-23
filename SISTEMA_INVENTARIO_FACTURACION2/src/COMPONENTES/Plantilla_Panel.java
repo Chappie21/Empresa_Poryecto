@@ -56,7 +56,7 @@ public class Plantilla_Panel extends JPanel {
 		// PANEL TITULO
 		this.PanelTitulo = new JTitle();
 		this.PanelTitulo.setBackgroundColor(new Color(255, 255, 255));
-		this.PanelTitulo.setTextColor(new Color(130, 0, 0));
+		this.PanelTitulo.setTextColor(new Color(113, 106, 234));
 		this.Panel_Norte.add(PanelTitulo, BorderLayout.CENTER);
 	}
 }

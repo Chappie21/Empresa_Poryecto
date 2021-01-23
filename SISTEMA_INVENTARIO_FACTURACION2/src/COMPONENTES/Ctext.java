@@ -12,6 +12,6 @@ public class Ctext extends JTextField{
 	//CONSTRUCTOR
 	public Ctext(String mensaje) {
 		PlaceHolder placeholder = new PlaceHolder(this, mensaje);/*MENSAJE TRASLUCIDO*/
-		this.setFont(new Font("Arial", 1, 15));
+		this.setFont(new Font("SansSerif", 1, 15));
 	}
 }
