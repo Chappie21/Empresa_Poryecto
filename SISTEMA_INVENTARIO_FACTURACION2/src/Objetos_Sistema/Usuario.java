@@ -9,17 +9,31 @@ public class Usuario {
 	private String Apellidos;
 	private String Departamento;
 	private String Descripcion;
+	private String Clave;
 	
-	// CONSTRUCTOR
-	public Usuario(Object...datos) {
+	// CONSTRUCTOR CON CLAVE
+	public Usuario(int Cedula, String Nombres, String Apellidos, String Departamento, String Descripcion, String Clave) {
+			
+			// DATOS INGRESADOS DESDE CONSTRUCTOR
+			this.Cedula = Cedula; 
+			this.Nombres = Nombres;
+			this.Apellidos = Apellidos;
+			this.Departamento = Departamento;
+			this.Descripcion = Descripcion;
+			this.setClave(Clave);
+			
+		}
+	
+	// CONSTRUCTOR SIN CLAVE
+	public Usuario(int id, int Cedula, String Nombres, String Apellidos, String Departamento, String Descripcion) {
 		
 		// DATOS INGRESADOS DESDE CONSTRUCTOR
-		this.id = (int) datos[0];
-		this.Cedula = (int) datos[1];
-		this.Nombres = (String) datos[2];
-		this.Apellidos = (String) datos[3];
-		this.Departamento = (String) datos[4];
-		this.Descripcion = (String) datos[5];
+		this.id = id;
+		this.Cedula = Cedula; 
+		this.Nombres = Nombres;
+		this.Apellidos = Apellidos;
+		this.Departamento = Departamento;
+		this.Descripcion = Descripcion;
 		
 	}
 	
@@ -71,6 +85,14 @@ public class Usuario {
 
 	public void setDescripcion(String descripcion) {
 		Descripcion = descripcion;
+	}
+
+	public String getClave() {
+		return Clave;
+	}
+
+	public void setClave(String clave) {
+		Clave = clave;
 	}
 	
 }

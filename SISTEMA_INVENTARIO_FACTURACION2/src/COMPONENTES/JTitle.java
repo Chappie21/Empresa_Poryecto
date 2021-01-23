@@ -18,7 +18,7 @@ public class JTitle extends JPanel {
 	
 	public JTitle() {
 		
-		setBorder(new MatteBorder(0, 0, 7, 0, (Color) new Color(128, 0, 0)));
+		setBorder(new MatteBorder(0, 0, 7, 0, (Color) new Color(113, 106, 234)));
 		setLayout(new BorderLayout(0, 0));
 		
 		this.Central = new JPanel();
@@ -29,8 +29,8 @@ public class JTitle extends JPanel {
 		this.Central.add(Icono, BorderLayout.WEST);
 		
 		this.Titulo = new JLabel("New Title");
-		this.Titulo.setForeground(new Color(128, 0, 0));
-		this.Titulo.setFont(new Font("Arial", Font.BOLD, 32));
+		this.Titulo.setForeground(new Color(113, 106, 234));
+		this.Titulo.setFont(new Font("SansSerif", Font.BOLD, 32));
 		this.Central.add(Titulo, BorderLayout.CENTER);
 		
 		this.Espacio1 = new JLabel("      ");
